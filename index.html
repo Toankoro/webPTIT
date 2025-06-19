@@ -37,6 +37,8 @@
     <!-- Font Awesome 5.15.4 - CDN online -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+
   </head>
   <body>
     <div id="dtr-wrapper" class="clearfix">
@@ -102,11 +104,13 @@
           <div class="dtr-header-right ml-auto">
             <!-- contact starts -->
             <div class="dtr-header-contact dtr-ml-50 dtr-mt-5">
-              <p>
-                <a class="nav-phone" href="#">
-                  <i class="icon-phone-call dtr-mr-5 color-dark-red"></i> 02437562186
-                </a>
-              </p>
+              <a
+                  class="dtr-video-popup dtr-btn-right-icon dtr-mr-5"
+                  data-autoplay="true"
+                  data-vbtype="image"
+                  href="assets/images/qrcode3.png"
+                  >qr web ar
+                  </a>
             </div>
             <!-- contact ends -->
 
@@ -115,15 +119,15 @@
               <ul
                 class="sf-menu dtr-scrollspy dtr-nav dark-nav-on-load dark-nav-on-scroll"
               >
-                <li><a class="nav-link" href="#home">Trang chủ.</a></li>
-                <li><a class="nav-link" href="#about">Giới thiệu.</a></li>
+                <li><a class="nav-link" href="#home">Trang chủ</a></li>
+                <li><a class="nav-link" href="#about">Giới thiệu</a></li>
                 <li>
-                  <a class="nav-link" href="#properties">Cơ sở vật chất.</a>
+                  <a class="nav-link" href="#properties">Cơ sở vật chất</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#services">Thông tin.</a>
+                  <a class="nav-link" href="#services">Thông tin</a>
                 </li>
-                <li><a class="nav-link" href="#contact">Liên hệ.</a></li>
+                <li><a class="nav-link" href="#contact">Liên hệ</a></li>
               </ul>
             </div>
             <!-- menu ends -->
@@ -165,16 +169,16 @@
                   href="#properties"
                   style="scroll-behavior: smooth;"
                   class="dtr-btn dtr-btn-right-icon dtr-mt-30 dtr-mr-5 btn-dark-blue"
-                  >Cơ sở vật chất<span class="btn-span bg-blue color-white"
+                  >Cơ sở vật chất<span class="btn-span bg-red color-white"
                     ><i class="icon-arrow-right"></i></span
                 ></a>
                 <!-- button 2 -->
                 <a
                   href="#contact"
-                  style="scroll-behavior: smooth;"
-                  class="dtr-btn dtr-btn-right-icon dtr-mt-30 btn-blue dtr-scrollspy"
-                  >Liên hệ<span class="btn-span bg-white color-blue"
-                    ><i class="icon-arrow-right"></i></span
+                  style="scroll-behavior: smooth; border: none;"
+                  class="dtr-btn dtr-btn-right-icon dtr-mt-30 btn-red dtr-scrollspy"
+                  >Liên hệ<span class="btn-span bg-white"
+                    ><i class="icon-arrow-right  color-red"></i></span
                 ></a>
                 <!-- buttons end -->
               <!-- column 2 ends -->
@@ -256,14 +260,13 @@
             <div class="row d-flex align-items-center dtr-mt-70">
               <!-- column 1 starts -->
               <div class="col-12 col-md-6">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/A2.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model1.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 80deg 9m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 1 ends -->
 
@@ -297,13 +300,12 @@
 
                   <!-- button -->
                   <a
-                    class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
-                    data-autoplay="true"
-                    data-vbtype="image"
-                    style="width: 200px;"
-                    href="assets/images/qrcode3.png"
-                    >QR quét 3D<span class="btn-span bg-blue color-white"
-                      ><i class="icon-play1"></i></span
+                  class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
+                  data-autoplay="true"
+                  data-vbtype="image"
+                  href="assets/images/A2.png"
+                  >Ảnh quét Model<span class="btn-span bg-red color-white"
+                    ><i class="icon-play1"></i></span
                   ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
                     Vui lòng giảm tối đa độ sáng màn hình để quét mô hình từ ảnh dễ hơn!
@@ -349,8 +351,8 @@
                   class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
                   data-autoplay="true"
                   data-vbtype="image"
-                  href="assets/images/qrcode3.png"
-                  >QR quét 3D<span class="btn-span bg-blue color-white"
+                  href="assets/images/A1.png"
+                  >Ảnh quét Model<span class="btn-span bg-red color-white"
                     ><i class="icon-play1"></i></span
                   ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
@@ -362,14 +364,13 @@
 
               <!-- column 2 starts -->
               <div class="col-12 col-md-6 small-device-space">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/A1.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model0.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 75deg 6m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 2 ends -->
             </div>
@@ -379,14 +380,13 @@
             <div class="row d-flex align-items-center dtr-mt-100">
               <!-- column 1 starts -->
               <div class="col-12 col-md-6">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/A3.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model2.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 75deg 5m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 1 ends -->
 
@@ -422,8 +422,8 @@
                     class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
                     data-autoplay="true"
                     data-vbtype="image"
-                    href="assets/images/qrcode3.png"
-                    >QR quét 3D<span class="btn-span bg-blue color-white"
+                    href="assets/images/A3.png"
+                    >Ảnh quét Model<span class="btn-span bg-red color-white"
                       ><i class="icon-play1"></i></span
                   ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
@@ -469,8 +469,8 @@
                   class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
                   data-autoplay="true"
                   data-vbtype="image"
-                  href="assets/images/qrcode3.png"
-                  >QR quét 3D<span class="btn-span bg-blue color-white"
+                  href="assets/images/B5.png"
+                  >Ảnh quét Model<span class="btn-span bg-red color-white"
                     ><i class="icon-play1"></i></span
                   ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
@@ -482,14 +482,13 @@
 
               <!-- column 2 starts -->
               <div class="col-12 col-md-6 small-device-space">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/B5.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model3.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 75deg 5m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 2 ends -->
             </div>
@@ -499,14 +498,13 @@
             <div class="row d-flex align-items-center dtr-mt-100">
               <!-- column 1 starts -->
               <div class="col-12 col-md-6">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/vp1c.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model5.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 75deg 5m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 1 ends -->
 
@@ -543,8 +541,8 @@
                     class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
                     data-autoplay="true"
                     data-vbtype="image"
-                    href="assets/images/qrcode3.png"
-                    >QR quét 3D<span class="btn-span bg-blue color-white"
+                    href="assets/images/vp1c.png"
+                    >Ảnh quét Model<span class="btn-span bg-red color-white"
                       ><i class="icon-play1"></i></span
                   ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
@@ -589,8 +587,8 @@
                     class="dtr-btn dtr-video-popup dtr-btn-right-icon dtr-mr-5 btn-dark-blue"
                     data-autoplay="true"
                     data-vbtype="image"
-                    href="assets/images/qrcode3.png"
-                    >QR quét 3D<span class="btn-span bg-blue color-white"
+                    href="assets/images/cantin.png"
+                    >Ảnh quét Model<span class="btn-span bg-red color-white"
                       ><i class="icon-play1"></i></span
                     ></a>
                   <p class="text-size-sm dtr-mb-10 mt-3 text-dark">
@@ -602,14 +600,13 @@
 
               <!-- column 2 starts -->
               <div class="col-12 col-md-6 small-device-space">
-                <div class="dtr-label-wrapper">
-                  <!-- image -->
-                  <img
-                    src="assets/images/cantin.png"
-                    alt="image"
-                    class="dtr-rounded-img"
-                  />
-                </div>
+                 <div class="dtr-label-wrapper model-container dtr-rounded-img">
+                    <model-viewer src="assets/model/Model4.glb" alt="A 3D model"
+                      auto-rotate
+                      orientation="0 0 3.14159"
+                      camera-orbit="0deg 75deg 5m"
+                      style="width: 100%; height: 100%; background-color: rgb(207, 204, 204);" ></model-viewer>
+                 </div>
               </div>
               <!-- column 2 ends -->
             </div>
@@ -888,15 +885,15 @@
             <div class="col-12 col-md-6 footer-col-2">
               <!-- list starts -->
               <ul class="dtr-list-inline">
-                <li><a href="#home" class="dtr-scroll-link">Trang chủ</a></li>
-                <li><a href="#about" class="dtr-scroll-link">Giới thiệu</a></li>
+                <li><a href="#home" class="dtr-scroll-link red">Trang chủ</a></li>
+                <li><a href="#about" class="dtr-scroll-link red">Giới thiệu</a></li>
                 <li>
-                  <a href="#properties" class="dtr-scroll-link">Cơ sở vật chất</a>
+                  <a href="#properties" class="dtr-scroll-link red">Cơ sở vật chất</a>
                 </li>
                 <li>
-                  <a href="#services" class="dtr-scroll-link">Thông tin</a>
+                  <a href="#services" class="dtr-scroll-link red">Thông tin</a>
                 </li>
-                <li><a href="#contact" class="dtr-scroll-link">Liên hệ</a></li>
+                <li><a href="#contact" class="dtr-scroll-link red">Liên hệ</a></li>
               </ul>
               <!-- list ends -->
 
@@ -946,5 +943,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
   </body>
 </html>

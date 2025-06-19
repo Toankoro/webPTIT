@@ -238,4 +238,3 @@ $('.dtr-slick-slider').slick({
       }
     });
   });
-

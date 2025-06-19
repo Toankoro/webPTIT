@@ -1,16 +1,16 @@
 /*----------------------------------------*/
 /*----- Basic typo -----*/
 /*----------------------------------------*/
-body { color: rgba(30,36,126,0.7); background-color: #f8faff; }
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #1e247e; }
+body { color: rgba(0, 0, 0, 0.7); background-color: #f8faff; }
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #ff0000; }
 h1, h1 a { text-shadow: 3px 3px #dbe7fe; }
 h2, h2 a { text-shadow: 3px 3px #dbe7fe; }
 h3, h3 a { text-shadow: 2px 2px #dbe7fe; }
 h4, h4 a { text-shadow: 2px 2px #dbe7fe; }
 h5, h5 a { text-shadow: 1px 1px #dbe7fe; }
 h6, h6 a { text-shadow: 1px 1px #dbe7fe; }
-a { color: #1e247e; }
-a:hover { color: #69aef8; }
+a { color: #ffffff; }
+a:hover { color: #ff0000; }
 /*----------------------------------------*/
 /*----- Backgrounds -----*/
 /*----------------------------------------*/
@@ -84,8 +84,8 @@ a:hover { color: #69aef8; }
 .btn-blue { background-color: #69aef8; color: #fff; }
 .btn-blue:hover { background-color: #69aef8; color: #fff; }
 /*-- dark-blue --*/
-.btn-dark-blue { background-color: #1e247e; color: #fff; }
-.btn-dark-blue:hover { background-color: #1e247e; color: #fff; }
+.btn-dark-blue { background-color: #ff0000; color: #fff; }
+.btn-dark-blue:hover { background-color: #ff0000; color: #fff; }
 /*-- green --*/
 .btn-green { background-color: #79caa1; color: #fff; }
 .btn-green:hover { background-color: #79caa1; color: #fff; }
@@ -197,3 +197,19 @@ font-size: 95%;
 /*===== accent link hover =====*/
 .accent-color-hover:hover { color: #D82221 !important; }
 .nav-phone:hover{color: #D82221 !important;}
+.bg-red, .btn-red{
+    background-color: rgb(255, 129, 129);
+}
+.color-red{
+    color: rgb(255, 129, 129);
+}
+.red{
+    color: #D82221 !important;
+}
+.dtr-header-contact a {
+ color: rgba(0, 0, 0, 0.9) !important; text-transform: uppercase; letter-spacing: 0.5px;
+  
+}
+.dtr-header-contact a:hover {
+  color: #D82221 !important; /* Thay đổi màu chữ khi hover */
+}
